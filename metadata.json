@@ -1,0 +1,5 @@
+{
+  "name": "Air Quality Monitoring Dashboard",
+  "description": "A web application to monitor real-time air quality data from IoT sensors. It displays temperature, humidity, and air quality index with live graphs, historical data, and customizable alerts.",
+  "requestFramePermissions": []
+}

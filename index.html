@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Quality Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'bkg-light': '#F8FAFC', // slate-50
+              'bkg-dark': '#0F172A',  // slate-900
+              'card-light': '#FFFFFF',
+              'card-dark': '#1E293B',  // slate-800
+              'text-light-primary': '#0F172A', // slate-900
+              'text-light-secondary': '#64748B', // slate-500
+              'text-dark-primary': '#F1F5F9', // slate-100
+              'text-dark-secondary': '#94A3B8', // slate-400
+              'accent': '#4F46E5', // indigo-600
+              'accent-hover': '#4338CA', // indigo-700
+              'safe': '#10B981',     // emerald-500
+              'moderate': '#F59E0B', // amber-500
+              'unhealthy': '#F97316',  // orange-500
+              'dangerous': '#EF4444',  // red-500
+            },
+            keyframes: {
+              'glow-danger': {
+                '0%, 100%': { 
+                  boxShadow: '0 0 5px rgba(239, 68, 68, 0.6), 0 0 10px rgba(239, 68, 68, 0.4)' 
+                },
+                '50%': { 
+                  boxShadow: '0 0 15px rgba(239, 68, 68, 1), 0 0 25px rgba(239, 68, 68, 0.8)' 
+                },
+              },
+            },
+            animation: {
+              'glow-danger': 'glow-danger 2s ease-in-out infinite',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai-sdk@^0.20.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
